@@ -1,7 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     width: 100%;
-    height: 100vh;
-    margin: 0;
+    height: 100dvh;
     background-color: rgb(17, 19, 24);
     font-family: 'Poppins', sans-serif;
 }
@@ -24,4 +30,8 @@ p {
 
 .offcanvas-header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#front-card, #back-card {
+    max-height: 10;
 }
