@@ -1,0 +1,23 @@
+<code class="language-lua rounded-3">local function fibonacci(n)
+    local fib = {0, 1}
+
+    for i = 3, n do
+        fib[i] = fib[i - 1] + fib[i - 2]
+    end
+
+    return fib
+end
+local tab = {}
+
+for i = 1, 256 do
+    table.insert(tab, i)
+end
+
+local numTerms = 10
+local fibSequence = fibonacci(numTerms)
+
+print("Fibonacci sequence up to " .. numTerms .. " terms:")
+for i, term in ipairs(fibSequence) do
+    print("Term " .. i .. ": " .. term)
+end</code>
+
